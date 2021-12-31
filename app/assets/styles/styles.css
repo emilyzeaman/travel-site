@@ -1,0 +1,17 @@
+body {
+    color: green;
+}
+
+/*  create a variable in CSS now
+that we have installed Postcss */
+
+$mainBlue: #2f5572;
+
+.large-hero  {
+
+    h2 {
+        color: $mainBlue;
+    }
+
+}
+
