@@ -1,11 +1,11 @@
 const path = require('path') //part of the node library
 //installed from npm store, for our CSS post processors
 const postCSSPlugins = [
-
-require('postcss-simple-vars'),
-require('postcss-nested'),
-require('autoprefixer'),
-require('postcss-import')
+    require('postcss-import'),
+    require('postcss-mixins'),
+    require('postcss-simple-vars'),
+    require('postcss-nested'),
+    require('autoprefixer')
 
 ]
 module.exports = {
