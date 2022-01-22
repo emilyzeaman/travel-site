@@ -4,7 +4,8 @@ const postCSSPlugins = [
 
 require('postcss-simple-vars'),
 require('postcss-nested'),
-require('autoprefixer')
+require('autoprefixer'),
+require('postcss-import')
 
 ]
 module.exports = {
@@ -13,8 +14,16 @@ output: {
     filename: 'bundled.js', 
     path: path.resolve(__dirname, 'app') //node js path package
     },
+    devServer: {
+        before: function(app,server){
+            server._watch('./app/**/*.html')
+        },
+        contentBase: path.join(__dirname, 'app'),
+        hot: true,
+        port: 3000,
+        host: '0.0.0.0'
+    },
 mode: 'development',
-watch: true, //webpack is actively watching our file changes and continually runs until we say stop (control C)
 module: {
     rules:[
         {

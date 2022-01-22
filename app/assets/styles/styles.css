@@ -1,17 +1,6 @@
-body {
-    color: green;
-}
-
-/*  create a variable in CSS now
-that we have installed Postcss */
-
-$mainBlue: #2f5572;
-
-.large-hero  {
-
-    h2 {
-        color: $mainBlue;
-    }
-
-}
+@import 'base/_global.css';
+@import "base/_variables.css";
+@import 'modules/_large-hero.css';
+@import 'modules/_btn.css';
+@import '/Users/emilyzeaman/Desktop/sites/travel-site/node_modules/normalize.css/normalize.css';
 
