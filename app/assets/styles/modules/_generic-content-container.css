@@ -1,0 +1,17 @@
+.generic-content-container {
+
+    p {
+        line-height: 1.65; /*doesn't require a unit of measurement*/
+        margin: 1.8rem 0;
+
+        /* once the device is at small size or larger*/
+        @mixin atSmall {
+            font-size: 1.125rem;
+        }
+    }
+
+    /* any links within a paragraph in this class */
+    p a {
+        font-weight: 700;
+    }
+}

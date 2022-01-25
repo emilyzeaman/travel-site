@@ -10,3 +10,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* manages the entire width of the page */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $mainOrange;
+}
